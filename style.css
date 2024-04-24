@@ -1,0 +1,59 @@
+/* Set the size of the div element that contains the map */
+#map {
+    height: 800px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+.button{
+    background: rgb(30, 139, 255);
+    padding : 1em 2em;
+    color: white;
+    border: 0;
+    border-radius: 10px 10px;
+}
+.button:hover{
+    background: #0000fa;
+}
+
+.modal{
+    display : none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 40% auto;
+    padding: 20px;
+    width:50%;
+    box-shadow : 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    border-radius: 10px 10px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.closeBtn{
+    color : #ccc;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover,.closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* key frame of modalopen animation*/
+@keyframes modalopen {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

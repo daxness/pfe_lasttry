@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>OLT Form</title>
+</head>
+<body>
+    <form>
+        <h2>OLT'+data.id+'Information </h2> 
+
+        <label for='latitude'>Latitudes:</label>
+        <input type='text' id='latitude' name='latitude' value='50' readonly><br>
+
+        <label for='longitude'>Longitude:</label>
+        <input type='text' id='longitude' name='longitude' value='+data.Longitudes'+ required><br>
+        <label for='onlinePorts'>Online ports:</label>
+        <input type='text' id='onlinePorts' name='onlinePorts' value='data.online_ports ><br>
+
+        <label for='freePorts'>Free ports:</label>
+        <input type='text' id='freePorts' name='freePorts'  value='data.free_ports ><br>
+
+        <label for='hostSite'>Host site:</label>
+        <input type='text' id='hostSite' name='hostSite' value='data.id_site required><br>
+        
+        <label for='type'>Type :</label>
+        <input type='text' id='type' name='type' value='data.type' required> 
+
+    </form>
+        <button type='submit'>Submit</button>
+</body>
+</html>
