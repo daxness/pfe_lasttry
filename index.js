@@ -890,7 +890,7 @@ function fetchEquipmentDetails(){
 
 
 //search process---------------------------------------
-//listner for the load details button
+//listner for the search details button
 $("#Search").click(function(){
 
   //get button by id
